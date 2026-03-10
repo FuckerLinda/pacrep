@@ -1,0 +1,287 @@
+
+2026-03-09 23:00:20 | INFO | train | Using one GPU: cuda.
+2026-03-09 23:00:20 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-09 23:00:20 | INFO | train | Num of worker in data loader is: 4
+2026-03-09 23:00:20 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-09 23:02:43 | INFO | train | Using one GPU: cuda.
+2026-03-09 23:02:43 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-09 23:02:43 | INFO | train | Num of worker in data loader is: 4
+2026-03-09 23:02:43 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:25:09 | INFO | train | Using one GPU: cuda.
+2026-03-10 09:25:09 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-10 09:25:09 | INFO | train | Num of worker in data loader is: 4
+2026-03-10 09:25:09 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:26:47 | INFO | train | Using one GPU: cuda.
+2026-03-10 09:26:47 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-10 09:26:47 | INFO | train | Num of worker in data loader is: 4
+2026-03-10 09:26:47 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:34:18 | INFO | train | Using one GPU: cuda.
+2026-03-10 09:34:18 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-10 09:34:18 | INFO | train | Num of worker in data loader is: 4
+2026-03-10 09:34:18 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:38:52 | INFO | train | Using one GPU: cuda.
+2026-03-10 09:38:52 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-10 09:38:52 | INFO | train | Num of worker in data loader is: 4
+2026-03-10 09:38:52 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:44:31 | INFO | train | Using one GPU: cuda.
+2026-03-10 09:44:31 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-10 09:44:31 | INFO | train | Num of worker in data loader is: 0
+2026-03-10 09:44:31 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:44:36 | INFO | deepnet.data.dataset_text | Use general data sampler.
+2026-03-10 09:47:04 | INFO | train | Using one GPU: cuda.
+2026-03-10 09:47:04 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-10 09:47:04 | INFO | train | Num of worker in data loader is: 0
+2026-03-10 09:47:04 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:47:08 | INFO | deepnet.data.dataset_text | Use general data sampler.
+2026-03-10 09:50:20 | INFO | train | Using one GPU: cuda.
+2026-03-10 09:50:20 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-10 09:50:20 | INFO | train | Num of worker in data loader is: 0
+2026-03-10 09:50:20 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:50:24 | INFO | deepnet.data.dataset_text | Use general data sampler.
+2026-03-10 09:54:11 | INFO | train | Using one GPU: cuda.
+2026-03-10 09:54:11 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-10 09:54:11 | INFO | train | Num of worker in data loader is: 0
+2026-03-10 09:54:11 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:54:15 | INFO | deepnet.data.dataset_text | Use general data sampler.
+2026-03-10 09:54:17 | INFO | train | Dataset Statictis(only for evaluation): train: 1200
+2026-03-10 09:54:17 | INFO | train | Dataset Statictis(only for evaluation): valid: 1180
+2026-03-10 09:54:17 | INFO | train | Dataset Statictis(only for evaluation): test: 1163
+2026-03-10 09:56:45 | INFO | train | Using one GPU: cuda.
+2026-03-10 09:56:45 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/sample', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='sample', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-10 09:56:45 | INFO | train | Num of worker in data loader is: 0
+2026-03-10 09:56:45 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': True, 'contribution': 16, 'value': 16}, '2': {'is_valid': True, 'contribution': 2, 'value': 2}, '3': {'is_valid': True, 'contribution': 5, 'value': 5}, '4': {'is_valid': True, 'contribution': 2, 'value': 2}, '5': {'is_valid': True, 'contribution': 19, 'value': 19}}
+2026-03-10 09:56:50 | INFO | deepnet.data.dataset_text | Use general data sampler.
+2026-03-10 09:56:51 | INFO | train | Dataset Statictis(only for evaluation): train: 1200
+2026-03-10 09:56:52 | INFO | train | Dataset Statictis(only for evaluation): valid: 1180
+2026-03-10 09:56:52 | INFO | train | Dataset Statictis(only for evaluation): test: 1163
+2026-03-10 09:56:52 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-10 09:56:52 | INFO | train | Time of iter training 0.00 s
+2026-03-10 09:56:52 | INFO | train | On iter step 0:, global step 0 Loss-step [1.0000 1.0000 1.0000]
+2026-03-10 09:58:19 | INFO | train | In dataset train: Loss is [87.4165 86.4352 0.9813]
+2026-03-10 09:58:19 | INFO | train | task-0		Acc is 0.1380, F1 is 0.1380
+2026-03-10 09:58:19 | INFO | train | task-0		F1-macro is 0.1213, F1-micro is 0.1380
+2026-03-10 09:58:19 | INFO | train | task-0		Pre is 0.1380, Rec is 0.1380
+2026-03-10 09:58:19 | INFO | train | task-0		C_M is 
+[[  0 306]
+ [  0  49]]
+2026-03-10 09:58:19 | INFO | train | task-1		Acc is 0.0000, F1 is 0.0000
+2026-03-10 09:58:19 | INFO | train | task-1		F1-macro is 0.0000, F1-micro is 0.0000
+2026-03-10 09:58:19 | INFO | train | task-1		Pre is 0.0000, Rec is 0.0000
+2026-03-10 09:58:19 | INFO | train | task-1		C_M is 
+[[ 0  0  0  0  0  0  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  1  0  0  0 30  0  0  0  2  5]
+ [ 0  0  0  0  0  0  0  0 61  0  0  0 15  9]
+ [ 7  0  0  0  0  0  0  0 60  0  0  0  6  5]
+ [ 0  0  0  0  0  0  0  0  9  0  0  0  1  5]
+ [ 1  0  0  0  0  0  0  0  3  0  0  0  0  2]
+ [ 0  0  0  0  0  0  0  0 11  0  0  0  2  5]
+ [15  0  1  0  0  0  0  0 45  0  0  0  9  7]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  2  0  0  0  0  2]
+ [ 0  0  0  0  0  0  0  0 26  0  0  0  0  1]
+ [ 0  0  0  0  0  0  0  0  3  0  0  0  0  2]
+ [ 0  0  0  0  0  0  0  0  1  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0]]
+2026-03-10 09:58:19 | INFO | train | task-2		Acc is 0.8582, F1 is 0.8582
+2026-03-10 09:58:19 | INFO | train | task-2		F1-macro is 0.4619, F1-micro is 0.8582
+2026-03-10 09:58:19 | INFO | train | task-2		Pre is 0.8582, Rec is 0.8582
+2026-03-10 09:58:19 | INFO | train | task-2		C_M is 
+[[  0  37]
+ [  0 224]]
+2026-03-10 09:58:19 | INFO | train | task-3		Acc is 0.0613, F1 is 0.0613
+2026-03-10 09:58:19 | INFO | train | task-3		F1-macro is 0.0232, F1-micro is 0.0613
+2026-03-10 09:58:19 | INFO | train | task-3		Pre is 0.0613, Rec is 0.0613
+2026-03-10 09:58:19 | INFO | train | task-3		C_M is 
+[[  0  19   1   0   0]
+ [  0  16   1   0   0]
+ [  0  35   0   0   0]
+ [  0  85   0   0   0]
+ [  0 104   0   0   0]]
+2026-03-10 09:58:19 | INFO | train | task-4		Acc is 0.2449, F1 is 0.2449
+2026-03-10 09:58:19 | INFO | train | task-4		F1-macro is 0.1967, F1-micro is 0.2449
+2026-03-10 09:58:19 | INFO | train | task-4		Pre is 0.2449, Rec is 0.2449
+2026-03-10 09:58:19 | INFO | train | task-4		C_M is 
+[[  0 440]
+ [  1 143]]
+2026-03-10 09:58:19 | INFO | train | task-5		Acc is 0.0034, F1 is 0.0034
+2026-03-10 09:58:19 | INFO | train | task-5		F1-macro is 0.0021, F1-micro is 0.0034
+2026-03-10 09:58:19 | INFO | train | task-5		Pre is 0.0034, Rec is 0.0034
+2026-03-10 09:58:19 | INFO | train | task-5		C_M is 
+[[  0   0   0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   1
+    0]
+ [  0   0   0   0   0   0   2   0   0   0   0   0   1   0   0   0  14   0
+    0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0
+    0]
+ [  6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   7   0
+    0]
+ [  1   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   1
+    0]
+ [  1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0]
+ [ 17   0   0   0   0   1  89   0   0   0   0   0  13   0   1   0   7  24
+   14]
+ [ 16   0   0   0   0   3 136   0   0   0   0   0  20   0   0   0   6  40
+    2]
+ [  1   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   9   0
+    0]
+ [  0   0  11   0   0   0   4   0   0   0   0   0   0   0   0   0  10   4
+    0]
+ [  1   0   1   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  1   0   0   0   0   0   5   0   0   0   0   0   0   0   0   0   2   1
+    0]
+ [  0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   3   0
+    0]
+ [  0   0   2   0   0   0   5   0   0   0   0   0   0   0   0   0  17   0
+    0]
+ [  3   0   1   0   0   0  39   0   0   0   0   0   0   0   0   0   2  10
+    0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   2   0   0   0   8   0   0   0   0   0   0   0   0   0   4   2
+    0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1
+    0]]
+2026-03-10 09:59:33 | INFO | train | In dataset valid: Loss is [78.5297 77.5457 0.9840]
+2026-03-10 09:59:33 | INFO | train | task-0		Acc is 0.4914, F1 is 0.4914
+2026-03-10 09:59:33 | INFO | train | task-0		F1-macro is 0.3295, F1-micro is 0.4914
+2026-03-10 09:59:33 | INFO | train | task-0		Pre is 0.4914, Rec is 0.4914
+2026-03-10 09:59:33 | INFO | train | task-0		C_M is 
+[[  0 297]
+ [  0 287]]
+2026-03-10 09:59:33 | INFO | train | task-1		Acc is 0.0736, F1 is 0.0736
+2026-03-10 09:59:33 | INFO | train | task-1		F1-macro is 0.0335, F1-micro is 0.0736
+2026-03-10 09:59:33 | INFO | train | task-1		Pre is 0.0736, Rec is 0.0736
+2026-03-10 09:59:33 | INFO | train | task-1		C_M is 
+[[10  0  0  0  1  0  0  0 36  0  0  0  1  2]
+ [ 7  0  0  0  0  0  0  0 27  0  0  0  5 11]
+ [ 0  0  1  0  0  0  0  0 36  0  0  0  3 10]
+ [ 5  0  0  0  0  0  0  0 34  0  0  0  2  9]
+ [ 0  0  1  0  0  0  0  0 37  0  0  0  3  9]
+ [ 1  0  0  0  0  0  0  0 20  0  0  0  0  4]
+ [ 0  0  1  0  0  0  0  0 33  0  0  0  6  9]
+ [ 7  0  0  0  0  0  0  0 25  0  0  0  2  5]
+ [ 2  0  0  0  0  0  0  0 29  0  0  0  6 13]
+ [ 0  0  0  0  0  0  0  0 16  0  0  0  4  5]
+ [ 0  0  0  0  0  0  0  0 48  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 38  0  0  0  6  5]
+ [ 1  0  1  0  0  0  0  0 37  0  0  0  3  7]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0]]
+2026-03-10 09:59:33 | INFO | train | task-2		Acc is 0.6048, F1 is 0.6048
+2026-03-10 09:59:33 | INFO | train | task-2		F1-macro is 0.3769, F1-micro is 0.6048
+2026-03-10 09:59:33 | INFO | train | task-2		Pre is 0.6048, Rec is 0.6048
+2026-03-10 09:59:33 | INFO | train | task-2		C_M is 
+[[ 0 49]
+ [ 0 75]]
+2026-03-10 09:59:33 | INFO | train | task-3		Acc is 0.1935, F1 is 0.1935
+2026-03-10 09:59:33 | INFO | train | task-3		F1-macro is 0.0658, F1-micro is 0.1935
+2026-03-10 09:59:33 | INFO | train | task-3		Pre is 0.1935, Rec is 0.1935
+2026-03-10 09:59:33 | INFO | train | task-3		C_M is 
+[[ 0 23  2  0  0]
+ [ 0 24  0  0  0]
+ [ 0 25  0  0  0]
+ [ 0 25  0  0  0]
+ [ 0 25  0  0  0]]
+2026-03-10 09:59:33 | INFO | train | task-4		Acc is 0.4682, F1 is 0.4682
+2026-03-10 09:59:33 | INFO | train | task-4		F1-macro is 0.3189, F1-micro is 0.4682
+2026-03-10 09:59:33 | INFO | train | task-4		Pre is 0.4682, Rec is 0.4682
+2026-03-10 09:59:33 | INFO | train | task-4		C_M is 
+[[  0 249]
+ [  2 221]]
+2026-03-10 09:59:33 | INFO | train | task-5		Acc is 0.0381, F1 is 0.0381
+2026-03-10 09:59:33 | INFO | train | task-5		F1-macro is 0.0144, F1-micro is 0.0381
+2026-03-10 09:59:33 | INFO | train | task-5		Pre is 0.0381, Rec is 0.0381
+2026-03-10 09:59:33 | INFO | train | task-5		C_M is 
+[[ 4  0  0  0  0  0  9  0  0  0  0  0  1  0  0  0  6  4  1]
+ [ 0  0  0  0  0  0 21  0  0  0  0  0  0  0  0  0  0  4  0]
+ [ 1  0  1  0  0  0  0  0  0  0  0  0  2  0  0  0 19  2  0]
+ [ 4  0  0  0  0  0 13  0  0  0  0  0  0  0  0  0  3  5  0]
+ [ 7  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 17  1  0]
+ [ 2  0  0  0  0  0 20  0  0  0  0  0  0  0  1  0  0  2  0]
+ [ 4  0  0  0  0  0 13  0  0  0  0  0  0  0  0  0  0  7  1]
+ [ 3  0  0  0  0  0 12  0  0  0  0  0  2  0  0  0  3  1  3]
+ [ 2  0  0  0  0  0 15  0  0  0  0  0  5  0  0  0  0  3  0]
+ [ 4  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0 20  0  0]
+ [ 0  0 14  0  0  0  5  0  0  0  0  0  0  0  0  0  3  3  0]
+ [ 3  0  7  0  0  0 11  0  0  0  0  0  0  0  0  0  0  3  1]
+ [ 1  0  0  0  0  0 17  0  0  0  0  0  0  0  0  0  3  4  0]
+ [ 0  0  8  0  0  0  0  0  0  0  0  0  0  0  0  0 17  0  0]
+ [ 0  0  2  0  0  0  5  0  0  0  0  0  1  0  0  0 13  2  0]
+ [ 1  0  0  0  0  2 18  0  0  0  0  0  0  0  0  0  1  3  0]
+ [ 2  0  0  0  0  0 19  0  0  0  0  0  0  0  0  0  0  3  1]
+ [ 1  0  4  0  0  0 10  0  0  0  0  0  1  0  0  0  9  0  0]
+ [ 0  0 15  0  0  0  0  0  0  0  0  0  1  0  0  0  5  4  0]]
+2026-03-10 10:00:45 | INFO | train | In dataset test: Loss is [77.7663 76.7985 0.9677]
+2026-03-10 10:00:45 | INFO | train | task-0		Acc is 0.5009, F1 is 0.5009
+2026-03-10 10:00:45 | INFO | train | task-0		F1-macro is 0.3337, F1-micro is 0.5009
+2026-03-10 10:00:45 | INFO | train | task-0		Pre is 0.5009, Rec is 0.5009
+2026-03-10 10:00:45 | INFO | train | task-0		C_M is 
+[[  0 283]
+ [  0 284]]
+2026-03-10 10:00:45 | INFO | train | task-1		Acc is 0.0847, F1 is 0.0847
+2026-03-10 10:00:45 | INFO | train | task-1		F1-macro is 0.0391, F1-micro is 0.0847
+2026-03-10 10:00:45 | INFO | train | task-1		Pre is 0.0847, Rec is 0.0847
+2026-03-10 10:00:45 | INFO | train | task-1		C_M is 
+[[ 9  0  0  0  0  0  0  0 32  0  0  0  2  4]
+ [ 5  0  1  0  1  0  0  0 27  0  0  0  1 12]
+ [ 0  0  0  0  0  0  0  0 32  0  0  0  7 11]
+ [ 9  0  0  0  0  0  0  0 26  0  0  0  1 12]
+ [ 1  0  0  0  0  0  0  0 33  0  0  0  4 10]
+ [ 1  0  0  0  0  0  0  0 15  0  0  0  0  7]
+ [ 0  0  0  0  0  0  0  0 28  0  0  0  5 16]
+ [ 7  0  0  0  0  0  0  0 19  0  0  0  4  8]
+ [ 0  0  0  0  0  0  0  0 31  0  0  0  5 12]
+ [ 0  0  0  0  0  0  0  0 11  0  0  0  4  7]
+ [ 1  0  0  0  0  0  0  0 47  1  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 33  0  0  0  3 12]
+ [ 0  0  0  0  0  0  0  0 27  0  0  0  8 15]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0  0]]
+2026-03-10 10:00:45 | INFO | train | task-2		Acc is 0.6048, F1 is 0.6048
+2026-03-10 10:00:45 | INFO | train | task-2		F1-macro is 0.3769, F1-micro is 0.6048
+2026-03-10 10:00:45 | INFO | train | task-2		Pre is 0.6048, Rec is 0.6048
+2026-03-10 10:00:45 | INFO | train | task-2		C_M is 
+[[ 0 49]
+ [ 0 75]]
+2026-03-10 10:00:45 | INFO | train | task-3		Acc is 0.1935, F1 is 0.1935
+2026-03-10 10:00:45 | INFO | train | task-3		F1-macro is 0.0653, F1-micro is 0.1935
+2026-03-10 10:00:45 | INFO | train | task-3		Pre is 0.1935, Rec is 0.1935
+2026-03-10 10:00:45 | INFO | train | task-3		C_M is 
+[[ 0 24  1  0  0]
+ [ 0 24  0  0  0]
+ [ 0 25  0  0  0]
+ [ 0 25  0  0  0]
+ [ 0 25  0  0  0]]
+2026-03-10 10:00:45 | INFO | train | task-4		Acc is 0.4746, F1 is 0.4746
+2026-03-10 10:00:45 | INFO | train | task-4		F1-macro is 0.3218, F1-micro is 0.4746
+2026-03-10 10:00:45 | INFO | train | task-4		Pre is 0.4746, Rec is 0.4746
+2026-03-10 10:00:45 | INFO | train | task-4		C_M is 
+[[  0 247]
+ [  1 224]]
+2026-03-10 10:00:45 | INFO | train | task-5		Acc is 0.0381, F1 is 0.0381
+2026-03-10 10:00:45 | INFO | train | task-5		F1-macro is 0.0161, F1-micro is 0.0381
+2026-03-10 10:00:45 | INFO | train | task-5		Pre is 0.0381, Rec is 0.0381
+2026-03-10 10:00:45 | INFO | train | task-5		C_M is 
+[[ 4  0  0  0  0  0 17  0  0  0  0  0  1  0  0  0  0  1  2]
+ [ 0  0  0  0  0  0 21  0  0  0  0  0  0  0  0  0  0  4  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0 23  0  1]
+ [ 6  0  0  0  0  0 11  0  0  0  0  0  0  0  0  0  1  7  0]
+ [ 9  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 15  1  0]
+ [ 3  0  0  0  0  0 14  0  0  0  0  0  0  0  0  0  0  8  0]
+ [ 7  0  0  0  0  0  8  0  0  0  0  0  0  0  0  0  0  7  3]
+ [ 7  0  0  0  0  0 10  0  0  0  0  0  1  0  0  0  2  4  0]
+ [ 3  0  0  0  0  0 14  0  0  0  0  0  0  0  0  0  0  6  0]
+ [ 3  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0 21  0  0]
+ [ 0  0  9  0  0  0  3  0  0  0  0  0  0  0  0  0  6  7  0]
+ [ 2  0 12  0  0  0 10  0  0  0  1  0  0  0  0  0  0  0  0]
+ [ 1  0  2  0  0  1 11  0  0  0  0  0  0  0  0  0  5  5  0]
+ [ 0  0  7  0  0  0  0  0  0  0  3  0  0  0  0  0 15  0  0]
+ [ 0  0  3  0  0  0  5  0  0  0  0  0  0  0  0  0 15  2  0]
+ [ 2  0  0  0  0  0 13  0  0  0  0  0  0  0  0  0  3  6  1]
+ [ 2  0  0  0  0  1 16  0  0  0  0  0  0  0  0  0  2  2  2]
+ [ 2  0  1  0  0  0 12  0  0  0  0  0  0  0  0  0  6  4  0]
+ [ 0  0 17  0  0  0  4  0  0  0  0  0  0  0  0  0  4  0  0]]
+2026-03-10 10:00:46 | INFO | train | The best f1_macro util now is 0.1921, at step 0
+2026-03-10 10:00:47 | INFO | train | The best f1_micro util now is 0.3161, at step 0
