@@ -74,6 +74,11 @@ if __name__ == "__main__":
             # use single GPU
             # 此处最好不指定idx，使用CUDA_VISIBLE_DEVICES在外部指定
             device = torch.device('cuda')
+
+            #3.12 22:11 gemini新增
+            # 限制当前进程最多只能使用该显卡 40% 的显存，强行留出 60% 给其他任务
+            #torch.cuda.set_per_process_memory_fraction(0.2, 0)
+
             print('Using one GPU: %s.' % device)
             logger.info('Using one GPU: %s.' % device)
         else:

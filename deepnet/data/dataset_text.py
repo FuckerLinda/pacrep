@@ -73,11 +73,11 @@ class IterTextDataset:
 
     def get_data(self):
         try:
-            data = self.data_loader_iter.next()
+            data = next(self.data_loader_iter)
         except StopIteration:
             self.dataset.__reset__()
             self.__reset__()
-            data = self.data_loader_iter.next()
+            data = next(self.data_loader_iter)
             logger.info('Read next training chunk, data size is %s' % self.dataset.__len__())
             # logger.info('The 1st: %s' % str(self.dataset.data_chunk[0]))
         return data

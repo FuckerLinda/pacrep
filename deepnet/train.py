@@ -120,9 +120,12 @@ class TrainModel(object):
                 self.best_performance_recorder.record(f1_step, n_iter, self.model)
                 start_time = time.time()
                 loss_step = np.zeros((self.num_loss,))
-                if config.breakpoint < 0:
-                    exit()
+                #if config.breakpoint < 0:
+                 #   exit()
             loss_step = loss_step + TrainModel.train(self.model, self.data_train) / config.per_checkpoint
+            if step % 20 == 0:
+                    print("training step =", step, "type =", type(loss_step), "shape =", getattr(loss_step, "shape", None))
+                    print("training step =", step, "loss_step =", loss_step)
 
     @staticmethod
     def train(model, data_train):
