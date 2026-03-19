@@ -1,0 +1,47 @@
+1.PacRep 用了 3 个公开数据集、6 个任务：
+
+ISXW2016 / ISCXVPN 这一类 VPN 数据集
+	task 1：VPN vs NonVPN，二分类
+	task 2：应用分类，12 分类
+DoHBrw2020
+	task 3：malicious vs benign DoH query，二分类
+	task 4：DoH query generator identification，5 分类
+USTCTFC2016 / USTC-TFC
+	task 5：malware vs normal，二分类
+	task 6：software identification，19 分类
+
+PacRep在 5.1.4 里明确写了：
+	ISXW2016：训练 191541，验证 600，测试 600
+	DoHBrw2020：训练 133945，验证 125，测试 125
+	USTCTFC2016：训练 299272，验证 475，测试 475
+另外，PacRep 还说它自己的多任务联合训练时，把三个数据集的训练/验证/测试数直接相加，变成：
+	训练 624758
+	验证 1200
+	测试 1200
+
+
+
+
+
+
+2.ASNet 用了 4 个公开 benchmark + 1 个自采集数据集，共 5 个数据集、7 个任务：
+
+ISCXVPN
+	task 1：VPN / NONVPN，二分类
+	task 2：应用分类，12 分类
+USTC-TFC
+	task 1：malicious / benign，二分类
+	task 2：software label，19 分类
+CICIoT
+	6 类实验场景
+ISCXTor
+	13 分类
+CHNAPP
+	自采集 6 类应用流量
+
+ASNet在 Table I 里直接列出每个数据集Packets Size的划分情况：
+	ISCXVPN：总 8,711,211；训练 6,968,969；验证 871,121；测试 871,121
+	USTC-TFC：总 3,011,831；训练 2,409,465；验证 301,183；测试 301,183
+	CICIoT：总 4,632,537；训练 3,706,030；验证 463,254；测试 463,253
+	ISCXTor：总 4,114,398；训练 3,291,518；验证 411,441；测试 411,439
+	CHNAPP：总 1,287,303；训练 1,029,842；验证 128,731；测试 128,730
