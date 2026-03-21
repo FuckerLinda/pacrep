@@ -1,0 +1,22 @@
+ASNet 没有把 PacRep 的两个关键卖点原封不动继承下来：
+
+一是 六任务联合训练 / 通用表示 这条主线，ASNet 论文并没有把它当核心卖点。
+二是 分类损失 + triplet 对比学习，ASNet 论文叙事里也基本被 WSA + CSS 取代了。
+
+
+
+ASNet 源码只给两个模块，因为作者大概率想表达的是：“我们的方法增量只有这两个模块，其他训练框架、BERT 编码、数据读取、评估外壳都沿用 PacRep。”
+
+PacRep 的核心更像：
+	包级表示学习
+	triplet / contrastive 约束
+	多任务联合训练
+	统一表示迁移到多个任务
+
+而 ASNet 的核心更像：
+	底层 WSA：纠正/聚合 token 语义
+	顶层 CSS：用 task-aware prompt 做类别语义分离
+	不再把 triplet contrastive 当主角
+	更强调“类别语义分离”而不是“通用表示空间拉开”
+
+所以ASNet 是“建立在 PacRep 工程框架上”，但不是“继续沿着 PacRep 方法主线深化”。
