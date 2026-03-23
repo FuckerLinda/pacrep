@@ -1,4 +1,10 @@
 data/sample/*
+data/sample/.gitkeep
 data/benchmark/*/
 
 saved_model/*
+
+saved_model/.gitkeep
+
+
+log/.gitkeep
