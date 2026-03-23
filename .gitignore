@@ -1,4 +1,4 @@
 data/sample/*
-data/benchmark/*
+data/benchmark/*/
 
 saved_model/*

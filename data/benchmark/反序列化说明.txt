@@ -1,0 +1,13 @@
+pkt是一个对象。当执行 pkt = pr.read_packet() 时，Scapy 会读取二进制流量，然后根据计算机网络协议的严格规范，进行反序列化解码。
+print(repr(pkt))后可得到诸如
+<Ether  dst=00:11:22:33:44:55 src=66:77:88:99:aa:bb type=IPv4 |<IP  version=4 ihl=5 tos=0x0 len=1500 id=12345 flags=DF frag=0 ttl=64 proto=tcp chksum=0xabcd src=192.168.1.100 dst=8.8.8.8 |<TCP  sport=54321 dport=443 seq=111111 ack=222222 dataofs=5 reserved=0 flags=PA window=65535 chksum=0x1234 urgptr=0 |<Raw  load=b'\x17\x03\x03\x00\x2b\x00\x00\x00\x00\x00\x00...' |>>>>
+的回显。
+
+事实上，Scapy 用 / 或 | 把数据包切分成了不同的层（Layers）：
+	Ether：数据链路层（包含 MAC 地址）
+	IP：网络层（包含源和目的 IP）
+	TCP / UDP：传输层（包含端口号）
+	Raw：这就是应用层负载。因为往往是加密后的数据（比如 TLS 密文），Scapy 无法直接解析成明文，所以统一用一个叫 Raw 的类来包裹它，里面的 load 字段就是真实的十六进制字节流。
+
+
+【if 'Raw' in pkt: 】这个判断语句，仅仅是为了过滤掉那些纯粹的底层网络控制包。因为那些纯粹用于维持连接的 TCP ACK 包只有 <Ether |<IP |<TCP |>> 这三层，没有 Raw 层，所以条件不成立，就被过滤掉了；而那些带有真实应用数据的包（比如包含着 bittorrent 握手信息的包），结构里存在 <Raw |> 这一层，条件成立，就会被保留下来。
