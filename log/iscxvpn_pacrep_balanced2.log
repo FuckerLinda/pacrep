@@ -1,0 +1,321 @@
+2026-03-26 19:49:24 | INFO | train | Using one GPU: cuda.
+2026-03-26 19:49:24 | INFO | train | Model parameters: Namespace(dim_bert=768, dim_hidden=512, n_gram=3, n_loss=3, use_word_vec=False, max_length_sen=256, learning_rate=0.001, lr_word_vector=0.0001, lr_bert=1e-05, weight_decay=0, embedding_dropout_rate=0.5, linear_dropout_rate=0.5, lambda1=1, lambda2=1, iter_num=100000, batch_size=6, seed=2021, anchor='anchor', rnn_type='LSTM', segment_type='char', model_type='BertConCap', optim_type='Adam', label_path='./config/iscxvpn_2_label.conf', use_pretrain_bert=True, bert_is_array=True, bert_config_path='./config/uncased_L-12_H-768_A-12/bert_config.json', bert_vocab_path='./config/uncased_L-12_H-768_A-12/vocab.txt', bert_pretrained_path='./saved_model/english_bert_base.bin', pretrained_model_path='./saved_model/model-f1_macro-650.pth', gpu_mode=1, local_rank=0, max_checkpoint=4096, sampled_num=1200, per_checkpoint=256, dp_mode_gpu_num=-1, language='en', data_dir='C:\\dl\\PacRep\\./data/benchmark/iscxvpn_pacrep_balanced2', has_valid=1, auto_clean_model_mode=1, breakpoint=-1, name_model='iscxvpn_pacrep_balanced2', config_path='./config/model-en.conf', multi_gpu=None)
+2026-03-26 19:49:24 | INFO | train | Num of worker in data loader is: 0
+2026-03-26 19:49:24 | INFO | train | task detail: {'0': {'is_valid': True, 'contribution': 2, 'value': 2}, '1': {'is_valid': False, 'contribution': 16, 'value': 16}, '2': {'is_valid': False, 'contribution': 2, 'value': 2}, '3': {'is_valid': False, 'contribution': 5, 'value': 5}, '4': {'is_valid': False, 'contribution': 2, 'value': 2}, '5': {'is_valid': False, 'contribution': 19, 'value': 19}}
+2026-03-26 19:49:27 | INFO | deepnet.data.dataset_text | Use general data sampler.
+2026-03-26 19:49:28 | INFO | train | Dataset Statictis(only for evaluation): train: 1200
+2026-03-26 19:49:28 | INFO | train | Dataset Statictis(only for evaluation): valid: 344
+2026-03-26 19:49:28 | INFO | train | Dataset Statictis(only for evaluation): test: 352
+2026-03-26 19:49:28 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 19:49:28 | INFO | train | Time of iter training 0.00 s
+2026-03-26 19:49:28 | INFO | train | On iter step 0:, global step 0 Loss-step [1.0000 1.0000 1.0000]
+2026-03-26 19:50:58 | INFO | train | In dataset train: Loss is [3.1763 2.1834 0.9929]
+2026-03-26 19:50:58 | INFO | train | task-0		Acc is 0.4950, F1 is 0.4950
+2026-03-26 19:50:58 | INFO | train | task-0		F1-macro is 0.3311, F1-micro is 0.4950
+2026-03-26 19:50:58 | INFO | train | task-0		Pre is 0.4950, Rec is 0.4950
+2026-03-26 19:50:58 | INFO | train | task-0		C_M is 
+[[  0 606]
+ [  0 594]]
+2026-03-26 19:51:26 | INFO | train | In dataset valid: Loss is [3.1495 2.1554 0.9941]
+2026-03-26 19:51:26 | INFO | train | task-0		Acc is 0.5000, F1 is 0.5000
+2026-03-26 19:51:26 | INFO | train | task-0		F1-macro is 0.3333, F1-micro is 0.5000
+2026-03-26 19:51:26 | INFO | train | task-0		Pre is 0.5000, Rec is 0.5000
+2026-03-26 19:51:26 | INFO | train | task-0		C_M is 
+[[  0 172]
+ [  0 172]]
+2026-03-26 19:51:53 | INFO | train | In dataset test: Loss is [3.1157 2.1269 0.9888]
+2026-03-26 19:51:53 | INFO | train | task-0		Acc is 0.5000, F1 is 0.5000
+2026-03-26 19:51:53 | INFO | train | task-0		F1-macro is 0.3333, F1-micro is 0.5000
+2026-03-26 19:51:53 | INFO | train | task-0		Pre is 0.5000, Rec is 0.5000
+2026-03-26 19:51:53 | INFO | train | task-0		C_M is 
+[[  0 176]
+ [  0 176]]
+2026-03-26 19:51:54 | INFO | train | The best f1_macro util now is 0.3333, at step 0
+2026-03-26 19:51:56 | INFO | train | The best f1_micro util now is 0.5000, at step 0
+2026-03-26 19:54:19 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 19:54:19 | INFO | train | Time of iter training 143.23 s
+2026-03-26 19:54:19 | INFO | train | On iter step 1:, global step 256 Loss-step [1.4902 1.0893 0.4009]
+2026-03-26 19:55:27 | INFO | train | In dataset train: Loss is [0.7470 0.6433 0.1036]
+2026-03-26 19:55:27 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 19:55:27 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 19:55:27 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 19:55:27 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 19:55:47 | INFO | train | In dataset valid: Loss is [0.6830 0.6163 0.0666]
+2026-03-26 19:55:47 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 19:55:47 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 19:55:47 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 19:55:47 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 19:56:07 | INFO | train | In dataset test: Loss is [0.7272 0.6366 0.0906]
+2026-03-26 19:56:07 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 19:56:07 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 19:56:07 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 19:56:07 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 19:56:08 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 19:56:09 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 19:58:22 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 19:58:22 | INFO | train | Time of iter training 132.99 s
+2026-03-26 19:58:22 | INFO | train | On iter step 2:, global step 512 Loss-step [0.7836 0.6711 0.1125]
+2026-03-26 19:59:30 | INFO | train | In dataset train: Loss is [0.6787 0.5838 0.0950]
+2026-03-26 19:59:30 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 19:59:30 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 19:59:30 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 19:59:30 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 19:59:49 | INFO | train | In dataset valid: Loss is [0.6113 0.5497 0.0616]
+2026-03-26 19:59:49 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 19:59:49 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 19:59:49 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 19:59:49 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:00:09 | INFO | train | In dataset test: Loss is [0.6735 0.5803 0.0932]
+2026-03-26 20:00:09 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:00:09 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:00:09 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:00:09 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:00:09 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:00:09 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 20:02:22 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 20:02:22 | INFO | train | Time of iter training 132.91 s
+2026-03-26 20:02:22 | INFO | train | On iter step 3:, global step 768 Loss-step [0.6258 0.5100 0.1158]
+2026-03-26 20:03:30 | INFO | train | In dataset train: Loss is [0.3778 0.2806 0.0972]
+2026-03-26 20:03:30 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 20:03:30 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 20:03:30 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 20:03:30 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 20:03:50 | INFO | train | In dataset valid: Loss is [0.3267 0.2638 0.0629]
+2026-03-26 20:03:50 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 20:03:50 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 20:03:50 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 20:03:50 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:04:10 | INFO | train | In dataset test: Loss is [0.3638 0.2730 0.0907]
+2026-03-26 20:04:10 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:04:10 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:04:10 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:04:10 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:04:10 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:04:10 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 20:06:26 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 20:06:26 | INFO | train | Time of iter training 135.51 s
+2026-03-26 20:06:26 | INFO | train | On iter step 4:, global step 1024 Loss-step [0.6967 0.5718 0.1249]
+2026-03-26 20:07:34 | INFO | train | In dataset train: Loss is [0.4728 0.3883 0.0845]
+2026-03-26 20:07:34 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 20:07:34 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 20:07:34 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 20:07:34 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 20:07:54 | INFO | train | In dataset valid: Loss is [0.4054 0.3498 0.0556]
+2026-03-26 20:07:54 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 20:07:54 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 20:07:54 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 20:07:54 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:08:14 | INFO | train | In dataset test: Loss is [0.4145 0.3312 0.0833]
+2026-03-26 20:08:14 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:08:14 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:08:14 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:08:14 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:08:14 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:08:14 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 20:10:26 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 20:10:26 | INFO | train | Time of iter training 132.30 s
+2026-03-26 20:10:26 | INFO | train | On iter step 5:, global step 1280 Loss-step [0.3977 0.3052 0.0925]
+2026-03-26 20:11:35 | INFO | train | In dataset train: Loss is [0.2532 0.1782 0.0750]
+2026-03-26 20:11:35 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 20:11:35 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 20:11:35 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 20:11:35 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 20:11:55 | INFO | train | In dataset valid: Loss is [0.2106 0.1619 0.0487]
+2026-03-26 20:11:55 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 20:11:55 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 20:11:55 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 20:11:55 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:12:15 | INFO | train | In dataset test: Loss is [0.2139 0.1529 0.0610]
+2026-03-26 20:12:15 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:12:15 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:12:15 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:12:15 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:12:15 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:12:15 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 20:14:29 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 20:14:29 | INFO | train | Time of iter training 134.57 s
+2026-03-26 20:14:29 | INFO | train | On iter step 6:, global step 1536 Loss-step [0.3611 0.2548 0.1063]
+2026-03-26 20:15:39 | INFO | train | In dataset train: Loss is [0.2465 0.1549 0.0915]
+2026-03-26 20:15:39 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 20:15:39 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 20:15:39 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 20:15:39 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 20:16:02 | INFO | train | In dataset valid: Loss is [0.2211 0.1608 0.0603]
+2026-03-26 20:16:02 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 20:16:02 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 20:16:02 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 20:16:02 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:16:23 | INFO | train | In dataset test: Loss is [0.2590 0.1750 0.0840]
+2026-03-26 20:16:23 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:16:23 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:16:23 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:16:23 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:16:23 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:16:23 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 20:18:35 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 20:18:35 | INFO | train | Time of iter training 131.85 s
+2026-03-26 20:18:35 | INFO | train | On iter step 7:, global step 1792 Loss-step [0.3144 0.2046 0.1098]
+2026-03-26 20:19:41 | INFO | train | In dataset train: Loss is [0.2362 0.1434 0.0928]
+2026-03-26 20:19:41 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 20:19:41 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 20:19:41 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 20:19:41 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 20:20:02 | INFO | train | In dataset valid: Loss is [0.1981 0.1379 0.0601]
+2026-03-26 20:20:02 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 20:20:02 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 20:20:02 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 20:20:02 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:20:22 | INFO | train | In dataset test: Loss is [0.2191 0.1356 0.0836]
+2026-03-26 20:20:22 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:20:22 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:20:22 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:20:22 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:20:22 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:20:22 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 20:22:36 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 20:22:36 | INFO | train | Time of iter training 133.92 s
+2026-03-26 20:22:36 | INFO | train | On iter step 8:, global step 2048 Loss-step [0.1991 0.1372 0.0619]
+2026-03-26 20:23:47 | INFO | train | In dataset train: Loss is [0.0967 0.0811 0.0157]
+2026-03-26 20:23:47 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 20:23:47 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 20:23:47 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 20:23:47 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 20:24:08 | INFO | train | In dataset valid: Loss is [0.0838 0.0700 0.0138]
+2026-03-26 20:24:08 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 20:24:08 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 20:24:08 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 20:24:08 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:24:29 | INFO | train | In dataset test: Loss is [0.0883 0.0753 0.0130]
+2026-03-26 20:24:29 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:24:29 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:24:29 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:24:29 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:24:29 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:24:29 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 20:25:57 | INFO | deepnet.data.dataset_text | Read next training chunk, data size is 13296
+2026-03-26 20:26:41 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 20:26:41 | INFO | train | Time of iter training 132.66 s
+2026-03-26 20:26:41 | INFO | train | On iter step 9:, global step 2304 Loss-step [0.1837 0.1461 0.0375]
+2026-03-26 20:27:51 | INFO | train | In dataset train: Loss is [0.2371 0.1432 0.0939]
+2026-03-26 20:27:51 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 20:27:51 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 20:27:51 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 20:27:51 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 20:28:11 | INFO | train | In dataset valid: Loss is [0.1980 0.1364 0.0617]
+2026-03-26 20:28:11 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 20:28:11 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 20:28:11 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 20:28:11 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:28:38 | INFO | train | In dataset test: Loss is [0.2296 0.1374 0.0922]
+2026-03-26 20:28:38 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:28:38 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:28:38 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:28:38 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:28:38 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:28:38 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 20:31:25 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 20:31:25 | INFO | train | Time of iter training 167.16 s
+2026-03-26 20:31:25 | INFO | train | On iter step 10:, global step 2560 Loss-step [0.2541 0.1489 0.1052]
+2026-03-26 20:32:57 | INFO | train | In dataset train: Loss is [0.2388 0.1447 0.0941]
+2026-03-26 20:32:57 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 20:32:57 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 20:32:57 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 20:32:57 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 20:33:25 | INFO | train | In dataset valid: Loss is [0.2009 0.1390 0.0619]
+2026-03-26 20:33:25 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 20:33:25 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 20:33:25 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 20:33:25 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:33:53 | INFO | train | In dataset test: Loss is [0.2299 0.1401 0.0898]
+2026-03-26 20:33:53 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:33:53 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:33:53 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:33:53 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:33:53 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:33:53 | INFO | train | The best f1_micro util now is 0.9659, at step 1
+2026-03-26 20:36:36 | INFO | train | ----------------------------------------------------------------------------------
+2026-03-26 20:36:36 | INFO | train | Time of iter training 163.82 s
+2026-03-26 20:36:36 | INFO | train | On iter step 11:, global step 2816 Loss-step [0.2383 0.1425 0.0958]
+2026-03-26 20:38:07 | INFO | train | In dataset train: Loss is [0.2175 0.1438 0.0738]
+2026-03-26 20:38:07 | INFO | train | task-0		Acc is 0.9667, F1 is 0.9667
+2026-03-26 20:38:07 | INFO | train | task-0		F1-macro is 0.9666, F1-micro is 0.9667
+2026-03-26 20:38:07 | INFO | train | task-0		Pre is 0.9667, Rec is 0.9667
+2026-03-26 20:38:07 | INFO | train | task-0		C_M is 
+[[606   0]
+ [ 40 554]]
+2026-03-26 20:38:35 | INFO | train | In dataset valid: Loss is [0.2010 0.1389 0.0621]
+2026-03-26 20:38:35 | INFO | train | task-0		Acc is 0.9738, F1 is 0.9738
+2026-03-26 20:38:35 | INFO | train | task-0		F1-macro is 0.9738, F1-micro is 0.9738
+2026-03-26 20:38:35 | INFO | train | task-0		Pre is 0.9738, Rec is 0.9738
+2026-03-26 20:38:35 | INFO | train | task-0		C_M is 
+[[172   0]
+ [  9 163]]
+2026-03-26 20:39:02 | INFO | train | In dataset test: Loss is [0.2263 0.1385 0.0879]
+2026-03-26 20:39:02 | INFO | train | task-0		Acc is 0.9659, F1 is 0.9659
+2026-03-26 20:39:02 | INFO | train | task-0		F1-macro is 0.9659, F1-micro is 0.9659
+2026-03-26 20:39:02 | INFO | train | task-0		Pre is 0.9659, Rec is 0.9659
+2026-03-26 20:39:02 | INFO | train | task-0		C_M is 
+[[176   0]
+ [ 12 164]]
+2026-03-26 20:39:02 | INFO | train | The best f1_macro util now is 0.9659, at step 1
+2026-03-26 20:39:02 | INFO | train | The best f1_micro util now is 0.9659, at step 1

@@ -2,7 +2,7 @@
 
 ISXW2016 / ISCXVPN 这一类 VPN 数据集
 	task 1：VPN vs NonVPN，二分类
-	task 2：应用分类，12 分类
+	task 2：应用分类，12 分类（最可能是AIM, Email, Facebook, FTPS, Gmail, Hangouts, ICQ, BitTorrent, SFTP, Skype, Vimeo, YouTube）
 DoHBrw2020
 	task 3：malicious vs benign DoH query，二分类
 	task 4：DoH query generator identification，5 分类
